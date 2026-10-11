@@ -147,29 +147,6 @@ http://localhost
 ---
 
 ## System Architecture
-
-### High-Level Diagram
-
-```mermaid
-graph TB
-    subgraph Client["Client Browser"]
-        React[React + Vite + TS]
-    end
-    
-    subgraph Docker["Docker Network"]
-        Nginx[Nginx Reverse Proxy :80]
-        
-        subgraph Backend["Backend Container"]
-            SpringBoot[Spring Boot 3 :8080]
-            Actuator[Spring Actuator]
-        end
-        
-        subgraph Database["Data Layer"]
-            H2[H2 Database<br/>File-Based]
-            Flyway[Flyway Migrations]
-            Volume[Docker Volume<br/>persistence]
-        end
-    end
     
     React -->|HTTP| Nginx
     Nginx -->|/api/*| SpringBoot
