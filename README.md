@@ -76,23 +76,6 @@ AI Resume Builder is a **production-ready, open-source resume and CV generator**
 
 ---
 
-## Screenshots
-
-### Dashboard
-*Coming soon - add screenshots to `docs/screenshots/`*
-
-### Resume Builder
-*Coming soon - add screenshots to `docs/screenshots/`*
-
-### Live Preview
-*Coming soon - add screenshots to `docs/screenshots/`*
-
----
-
-## Live Demo
-
-**Coming soon!** The application will be deployed to a public URL.
-
 ### Local Demo
 
 ```bash
